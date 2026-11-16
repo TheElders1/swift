@@ -5,7 +5,6 @@ import './admin-workspace.css';
 import './motion.css';
 import './swiftsurge-design.css';
 import { RootChrome } from '@/components/root-chrome';
-import { ChatwayWidget } from '@/components/chatway-widget';
 
 function resolveSiteUrl() {
   const configuredUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
@@ -56,5 +55,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
-  return <html lang="en"><body><RootChrome>{children}</RootChrome><ChatwayWidget /></body></html>;
+  return <html lang="en"><body><RootChrome>{children}</RootChrome></body></html>;
 }

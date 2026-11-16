@@ -18,7 +18,6 @@ export default function GlobalError({ error }: { error: Error & { digest?: strin
         <button type="button" onClick={() => window.location.reload()} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '13px 19px', border: 0, borderRadius: 24, background: '#078777', color: '#fff', fontWeight: 700, cursor: 'pointer' }}><RefreshCw size={16} /> Reload page</button>
         <a href="/" style={{ display: 'inline-flex', alignItems: 'center', padding: '13px 19px', border: '1px solid #cbd9d6', borderRadius: 24, color: '#183747', fontWeight: 700, textDecoration: 'none' }}>Homepage</a>
       </div>
-      <a href="mailto:contact@swiftsurge.example" style={{ marginTop: 22, color: '#078777', fontSize: 13 }}>Contact SwiftSurge support</a>
     </main>
   </body></html>;
 }

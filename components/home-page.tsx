@@ -11,7 +11,7 @@ function RouteArtwork() {
       <circle cx="85" cy="258" r="8" className="ss-route-node"/><circle cx="282" cy="126" r="7" className="ss-route-node ss-route-node-small"/><circle cx="520" cy="89" r="8" className="ss-route-node ss-route-node-lime"/>
       <g className="ss-route-plane" transform="translate(379 157) rotate(-16)"><path d="M0 13 50 0 32 17l9 12-14-7-12 11 4-16z" fill="currentColor"/></g>
     </svg>
-    <span className="ss-map-label ss-label-origin">ORIGIN HUB <strong>Lagos</strong></span><span className="ss-map-label ss-label-middle">IN TRANSIT</span><span className="ss-map-label ss-label-destination">ARRIVAL HUB <strong>Toronto</strong></span>
+    <span className="ss-map-label ss-label-origin">ORIGIN HUB <strong>Pickup point</strong></span><span className="ss-map-label ss-label-middle">IN TRANSIT</span><span className="ss-map-label ss-label-destination">ARRIVAL HUB <strong>Delivery point</strong></span>
     <div className="ss-route-package"><span className="ss-package-icon"><PackageCheck size={17}/></span><span><small>SHIPMENT STATUS</small><strong>Moving with care</strong></span><i /></div>
     </div>
     <div className="ss-route-footer"><span><Globe2 size={14}/> Global reach</span><span>Updates along the way <ArrowUpRight size={13}/></span></div>

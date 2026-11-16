@@ -35,7 +35,7 @@ export default async function Login({ searchParams }: { searchParams: Promise<{ 
           <h2>Welcome to operations.</h2>
           <p>Sign in to add shipments and manage delivery updates.</p>
           <AdminLoginForm accessDenied={access === 'admin-required'} />
-          <div className="login-support">Need admin access? <a href="mailto:contact@swiftsurge.example">Contact your SwiftSurge representative</a></div>
+          <div className="login-support">Need admin access? Contact your SwiftSurge representative.</div>
         </div>
       </div>
     </main>

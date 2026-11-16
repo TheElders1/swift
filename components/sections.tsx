@@ -46,5 +46,5 @@ export function TrustGrid() {
 }
 
 export function CtaBand() {
-  return <section className="ss-cta-band"><div className="ss-container ss-cta-inner"><div><span className="ss-eyebrow"><i />READY FOR THE NEXT MOVE</span><h2>Let’s make it<br /><em>happen.</em></h2></div><a className="ss-button ss-button-lime" href="mailto:contact@swiftsurge.example">Talk to our team <ArrowUpRight size={17} /></a></div></section>;
+  return <section className="ss-cta-band"><div className="ss-container ss-cta-inner"><div><span className="ss-eyebrow"><i />READY FOR THE NEXT MOVE</span><h2>Let’s make it<br /><em>happen.</em></h2></div><Link className="ss-button ss-button-lime" href="/about">Talk to our team <ArrowUpRight size={17} /></Link></div></section>;
 }

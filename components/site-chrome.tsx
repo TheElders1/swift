@@ -54,9 +54,9 @@ export function SiteFooter() {
         </div>
         <div className="ss-footer-links">
           <div><span className="ss-footer-label">EXPLORE</span><Link href="/services">Services</Link><Link href="/about">About SwiftSurge</Link><Link href="/locations">Our network</Link><Link href="/why-us">Why SwiftSurge</Link></div>
-          <div><span className="ss-footer-label">SHIPMENTS</span><Link href="/track">Track a shipment</Link><Link href="/login">Administrator sign in</Link><a href="mailto:contact@swiftsurge.example">Contact support</a></div>
+          <div><span className="ss-footer-label">SHIPMENTS</span><Link href="/track">Track a shipment</Link><Link href="/login">Administrator sign in</Link><Link href="/about">About &amp; support</Link></div>
         </div>
-        <div className="ss-footer-callout"><span className="ss-footer-label">LET’S GET MOVING</span><h2>One good move<br />starts here.</h2><a href="mailto:contact@swiftsurge.example">Talk to our team <ArrowUpRight size={16} /></a></div>
+        <div className="ss-footer-callout"><span className="ss-footer-label">LET’S GET MOVING</span><h2>One good move<br />starts here.</h2><Link href="/about">Talk to our team <ArrowUpRight size={16} /></Link></div>
       </div>
       <div className="ss-container ss-footer-bottom"><span>© {new Date().getFullYear()} SwiftSurge Logistics</span><span>Momentum behind every delivery.</span></div>
     </footer>

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import { RefreshCw, Home, Mail } from 'lucide-react';
+import { RefreshCw, Home } from 'lucide-react';
 
 export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
   useEffect(() => {
@@ -17,6 +17,5 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
       <button className="button button-green" type="button" onClick={() => reset()}><RefreshCw size={16} /> Try again</button>
       <a className="button button-outline-dark" href="/"><Home size={16} /> Homepage</a>
     </div>
-    <a className="app-error-contact" href="mailto:contact@swiftsurge.example"><Mail size={14} /> Contact support</a>
   </main>;
 }

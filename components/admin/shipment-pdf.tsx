@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowLeft, MapPin, Phone, Mail, Package, Weight, CalendarDays } from 'lucide-react';
+import { ArrowLeft, Package, Weight, CalendarDays } from 'lucide-react';
 import { PrintButton } from '@/components/admin/print-button';
 import { ShipmentStatusStamp } from '@/components/admin/shipment-status-stamp';
 import type { ReactNode } from 'react';
@@ -39,9 +39,6 @@ const date = (input: string | null) => {
   return Number.isNaN(parsed.getTime()) ? '—' : new Intl.DateTimeFormat('en', { dateStyle: 'medium', timeZone: 'UTC' }).format(parsed);
 };
 const statusLabel = (input: string) => input.replaceAll('_', ' ').replaceAll('-', ' ').replace(/\b\w/g, (letter) => letter.toUpperCase());
-const CONTACT_EMAIL = 'contact@swiftsurge.example';
-const CONTACT_PHONE = 'Contact support for current service numbers';
-const CONTACT_ADDRESS = 'Regional service network';
 
 function Brand({ kind }: { kind: string }) {
   return <header className={`shipment-pdf-brand shipment-pdf-brand-${kind}`}>
@@ -56,10 +53,8 @@ function Field({ label, children, className = '' }: { label: string; children: R
 
 function ContactPanel() {
   return <aside className="shipment-pdf-contact">
-    <h2>Contact SwiftSurge</h2>
-    <p><MapPin aria-hidden="true" /> <span>{CONTACT_ADDRESS}</span></p>
-    <p><Mail aria-hidden="true" /> <span>Email: {CONTACT_EMAIL}</span></p>
-    <p><Phone aria-hidden="true" /> <span>{CONTACT_PHONE}</span></p>
+    <h2>Shipment support</h2>
+    <p>For assistance, contact the representative who arranged this shipment.</p>
   </aside>;
 }
 
@@ -120,7 +115,7 @@ export function ShipmentPdf({ shipment, type }: { shipment: ShipmentDocument; ty
         <section className="shipment-pdf-receipt-description"><h2>Parcel description</h2><p>{value(shipment.description || shipment.package_type)}</p>{shipment.package_type && <small>Package type: {shipment.package_type}</small>}</section>
         <div className="shipment-pdf-receipt-facts"><Field label="EXPECTED DATE OF DELIVERY">{deliveryDate}</Field><Field label="WEIGHT">{shipment.weight_kg == null ? '—' : `${shipment.weight_kg} kg`}</Field><Field label="STATUS">{statusLabel(shipment.status)}</Field><Field label="SHIPMENT CHARGES">{amount}</Field><Field label="COMMENTS">{value(shipment.shipment_comments)}</Field></div>
         <ContactPanel />
-        <p className="shipment-pdf-terms">Please retain this receipt for your shipment records. For help with this delivery, contact SwiftSurge Logistics using the details above.</p>
+        <p className="shipment-pdf-terms">Please retain this receipt for your shipment records. For help with this delivery, contact the representative who arranged the shipment.</p>
         <div className="shipment-pdf-receipt-signature"><span className="shipment-pdf-receipt-company-signature"><small>SwiftSurge Logistics · Authorized representative</small></span><span>Recipient signature __________________________</span></div>
       </>}
       <footer className="shipment-pdf-footer"><span>SwiftSurge Logistics · Momentum behind every delivery.</span><span>Generated {date(new Date().toISOString())}</span></footer>
