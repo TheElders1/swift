@@ -12,7 +12,7 @@ export default async function Login({ searchParams }: { searchParams: Promise<{ 
       <div className="login-art">
         <div className="login-art-glow" />
         <Link className="brand brand-light" href="/">
-          <img className="brand-logo" src="/images/swiftsurge-logistics-logo-wide.svg" alt="SwiftSurge Logistics — Momentum behind every delivery." />
+          <img className="brand-logo" src="/images/swiftsurge-logistics-logo.png" alt="SwiftSurge Logistics — Momentum behind every delivery." />
         </Link>
         <div className="login-art-copy">
           <span className="eyebrow eyebrow-green">SWIFTSURGE OPERATIONS</span>

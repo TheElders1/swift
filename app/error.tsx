@@ -9,7 +9,7 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
   }, [error.digest]);
 
   return <main className="app-error-page" role="alert">
-    <img src="/images/swiftsurge-logistics-logo-wide.svg" alt="SwiftSurge Logistics" />
+    <img src="/images/swiftsurge-logistics-logo.png" alt="SwiftSurge Logistics" />
     <span className="eyebrow">PAGE COULD NOT LOAD</span>
     <h1>Let’s get you back on track.</h1>
     <p>A temporary issue interrupted this page. Try again, or return to the homepage.</p>

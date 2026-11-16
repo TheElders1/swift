@@ -28,7 +28,7 @@ function resolveSiteUrl() {
 }
 
 const siteUrl = resolveSiteUrl();
-const socialImage = new URL('/images/swiftsurge-logistics-social.png?v=1', siteUrl).toString();
+const socialImage = new URL('/images/swiftsurge-logistics-social.png?v=2', siteUrl).toString();
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,

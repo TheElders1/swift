@@ -10,7 +10,7 @@ export default function GlobalError({ error }: { error: Error & { digest?: strin
 
   return <html lang="en"><body style={{ margin: 0, background: '#f4f7f6', color: '#183747', fontFamily: 'Arial, sans-serif' }}>
     <main style={{ boxSizing: 'border-box', minHeight: '100vh', display: 'grid', alignContent: 'center', justifyItems: 'center', padding: '32px 20px', textAlign: 'center' }}>
-      <img src="/images/swiftsurge-logistics-logo-wide.svg" alt="SwiftSurge Logistics" style={{ width: 190, height: 76, objectFit: 'contain', marginBottom: 28, background: '#fff', borderRadius: 10 }} />
+      <img src="/images/swiftsurge-logistics-logo.png" alt="SwiftSurge Logistics" style={{ width: 190, height: 76, objectFit: 'contain', marginBottom: 28, background: '#fff', borderRadius: 10 }} />
       <span style={{ color: '#078777', fontSize: 11, fontWeight: 700, letterSpacing: '.14em' }}>PAGE COULD NOT LOAD</span>
       <h1 style={{ maxWidth: 560, margin: '12px 0', fontSize: 'clamp(30px, 6vw, 48px)', lineHeight: 1.1 }}>Let’s get you back on track.</h1>
       <p style={{ maxWidth: 460, color: '#60747d', fontSize: 15, lineHeight: 1.7 }}>A temporary issue interrupted this page. Try again, or return to the homepage.</p>

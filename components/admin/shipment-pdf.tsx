@@ -45,7 +45,7 @@ const CONTACT_ADDRESS = 'Regional service network';
 
 function Brand({ kind }: { kind: string }) {
   return <header className={`shipment-pdf-brand shipment-pdf-brand-${kind}`}>
-    <img src="/images/swiftsurge-logistics-logo-wide.svg" alt="SwiftSurge Logistics" />
+    <img src="/images/swiftsurge-logistics-logo.png" alt="SwiftSurge Logistics" />
     <div><strong>SWIFTSURGE LOGISTICS</strong><span>MOMENTUM BEHIND EVERY DELIVERY</span></div>
   </header>;
 }

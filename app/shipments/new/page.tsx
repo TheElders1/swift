@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: 'Create shipment · Operations' };
 export default function NewShipmentPage() {
   return <div className="admin-page">
     <aside className="admin-sidebar">
-      <Link className="brand" href="/"><img className="brand-logo" src="/images/swiftsurge-logistics-logo-wide.svg" alt="SwiftSurge Logistics" /></Link>
+      <Link className="brand" href="/"><img className="brand-logo" src="/images/swiftsurge-logistics-logo.png" alt="SwiftSurge Logistics" /></Link>
       <div className="admin-nav-label">WORKSPACE</div>
       <Link className="admin-nav" href="/shipments"><LayoutDashboard />Overview</Link>
       <Link className="admin-nav active" href="/shipments"><Boxes />Shipments</Link>

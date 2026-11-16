@@ -27,16 +27,14 @@ button, input { font: inherit; }
 .ss-eyebrow-dark { color: #dbe8f7; }
 .ss-eyebrow-lime { color: #d8f39a; }
 
-/* Brand system: the temporary text lockup can be replaced by the supplied logo. */
-.ss-brand-lockup { display: inline-flex; align-items: center; gap: 10px; color: var(--deep); }
+/* Brand system: the supplied transparent logo sits on a white field for contrast. */
+.ss-brand-lockup { display: inline-flex; align-items: center; justify-content: center; width: 166px; height: 77px; overflow: hidden; padding: 3px 7px; border-radius: 4px; background: #fff; }
+.ss-brand-image { display: block; width: 100%; height: 100%; object-fit: contain; }
 .ss-brand-mark { width: 43px; height: 43px; flex: none; color: var(--deep); }
 .ss-brand-name { display: grid; grid-template-columns: auto; color: var(--deep); font-size: 21px; font-weight: 850; letter-spacing: -.07em; line-height: .94; }
 .ss-brand-dot { color: var(--surge-blue); }
 .ss-brand-name small { margin-top: 5px; color: var(--surge-slate); font-size: 7px; font-weight: 800; letter-spacing: .26em; }
-.ss-brand-light .ss-brand-name { color: #fff; }
-.ss-brand-light .ss-brand-name small { color: #bac9d5; }
-.ss-brand-light .ss-brand-mark rect { fill: #fff; }
-.ss-brand-light .ss-brand-mark path:first-of-type { fill: var(--deep); }
+.ss-brand-light { width: 205px; height: 102px; padding: 6px 10px; }
 
 /* Shared site navigation */
 .ss-utility-bar { min-height: 34px; color: #d3e0ec; background: var(--deep); font-size: 10px; letter-spacing: .04em; }
@@ -172,7 +170,7 @@ button, input { font: inherit; }
 @media (max-width: 760px) {
   .ss-container { width: calc(100% - 36px); }
   .ss-utility-inner { min-height: 32px; }.ss-utility-inner > span { font-size: 8px; }.ss-utility-inner > a { font-size: 8px; white-space: nowrap; }
-  .ss-header-inner { min-height: 68px; }.ss-brand-mark { width: 38px; height: 38px; }.ss-brand-name { font-size: 19px; }.ss-menu-toggle { display: grid; }
+  .ss-header-inner { min-height: 68px; }.ss-brand-lockup { width: 150px; height: 70px; }.ss-menu-toggle { display: grid; }
   .ss-nav { position: absolute; top: 68px; right: 0; left: 0; display: none; align-items: stretch; flex-direction: column; gap: 0; padding: 10px 18px 18px; border-bottom: 1px solid var(--line); background: #fff; box-shadow: 0 15px 30px #0b1f3312; }
   .ss-nav-open { display: flex; }.ss-nav > a { padding: 12px 3px; border-bottom: 1px solid #eaf0f5; font-size: 11px; }.ss-nav .ss-admin-link { margin: 0; }.ss-nav .ss-nav-track { justify-content: center; margin-top: 12px; border: 0; }
   .ss-hero { padding-top: 46px; }.ss-hero-grid { grid-template-columns: 1fr; gap: 22px; min-height: 0; padding-bottom: 33px; }.ss-hero-copy { padding: 0; }.ss-hero-copy h1 { max-width: 470px; margin: 17px 0 14px; font-size: clamp(49px, 13vw, 70px); }.ss-hero-copy > p { max-width: 500px; font-size: 12px; }.ss-hero-actions { margin-top: 19px; }.ss-hero-assurance { gap: 13px; margin-top: 18px; font-size: 8px; }.ss-route-art { max-width: none; transform: none; }.ss-route-map { min-height: 252px; }.ss-route-topline, .ss-route-footer { min-height: 38px; padding: 0 12px; }.ss-hero-bottom { min-height: 39px; font-size: 7px; }

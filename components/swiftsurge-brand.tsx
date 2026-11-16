@@ -11,8 +11,7 @@ export function SwiftSurgeMark({ className = '' }: { className?: string }) {
 export function SwiftSurgeWordmark({ light = false }: { light?: boolean }) {
   return (
     <span className={`ss-brand-lockup${light ? ' ss-brand-light' : ''}`}>
-      <SwiftSurgeMark className="ss-brand-mark" />
-      <span className="ss-brand-name">SwiftSurge<span className="ss-brand-dot">.</span><small>LOGISTICS</small></span>
+      <img className="ss-brand-image" src="/images/swiftsurge-logistics-logo.png" alt="SwiftSurge Logistics — Move Faster. Deliver Further." />
     </span>
   );
 }
