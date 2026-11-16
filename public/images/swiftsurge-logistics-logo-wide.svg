@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 240" role="img" aria-labelledby="title desc">
+  <title id="title">SwiftSurge Logistics</title>
+  <desc id="desc">SwiftSurge Logistics wordmark with a flowing speed and route mark.</desc>
+  <defs>
+    <linearGradient id="surge" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1479ff"/>
+      <stop offset="1" stop-color="#b8e82f"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(18 27)">
+    <path d="M136 24H54c-22 0-40 18-40 40v6h75c12 0 18 14 10 23l-53 59c-8 9-2 23 10 23h83c22 0 40-18 40-40v-7h-77c-12 0-18-14-10-23l54-59c8-9 2-22-10-22z" fill="#0b2c40"/>
+  <path d="M31 45H4l-12 15h48zm-16 35h-39l-12 15H5zm-18 35h-37l-12 15h38z" fill="url(#surge)"/>
+    <path d="M76 111c23-23 49-36 83-44-21 15-35 32-45 52-9 18-25 31-47 39l-13 5 22-25z" fill="url(#surge)"/>
+    <path d="M131 119c19-4 39-12 61-25l-10 27c-21 14-42 21-64 22z" fill="#b8e82f"/>
+    <path d="M154 69c15-7 28-11 42-13l-8 18c-13 3-24 7-35 12z" fill="#b8e82f"/>
+  </g>
+  <text x="245" y="125" fill="#0b1f33" font-family="Arial, Helvetica, sans-serif" font-size="91" font-style="italic" font-weight="800" letter-spacing="-5">Swift<tspan fill="#1479ff">Surge</tspan></text>
+  <path d="M250 153h585" stroke="#d7e3e4" stroke-width="2"/>
+  <text x="252" y="198" fill="#52667b" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" letter-spacing="10">LOGISTICS</text>
+  <text x="540" y="198" fill="#607080" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="500" letter-spacing="1.5">Momentum behind every delivery.</text>
+</svg>

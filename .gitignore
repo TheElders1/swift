@@ -1,0 +1,22 @@
+node_modules/
+.next/
+out/
+build/
+coverage/
+.vercel/
+.env*
+!.env.example
+*.tsbuildinfo
+next-env.d.ts
+
+# Local source/reference copies; the Next.js app uses selected assets in public/.
+/assets/
+/dashboard/
+/index.html
+/login.html
+/optime/
+/page/
+/transnovaservices_online/
+/velorix-logistics-main/
+/public/images/fast-route-*
+/public/images/ui/
