@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SwiftSurge">
-  <rect width="64" height="64" rx="16" fill="#0b1f33"/>
-  <text x="32" y="47" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="48" font-style="italic" font-weight="900" fill="#fff">S</text>
-  <path d="M15 53h21" stroke="#b8e82f" stroke-width="4" stroke-linecap="round"/>
-  <path d="M40 53h9" stroke="#1479ff" stroke-width="4" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SwiftSurge Logistics">
+  <rect width="64" height="64" rx="15" fill="#0b1f33"/>
+  <path d="M32 11 51 21.5v21L32 53 13 42.5v-21L32 11Z" fill="#f5f8fc"/>
+  <path d="m32 11 19 10.5L32 32 13 21.5 32 11Z" fill="#b8e82f"/>
+  <path d="M13 21.5 32 32v21L13 42.5v-21Z" fill="#f5f8fc"/>
+  <path d="M51 21.5 32 32v21l19-10.5v-21Z" fill="#1479ff"/>
+  <path d="M32 32v21M13 21.5 32 32l19-10.5M32 11v10.5" fill="none" stroke="#0b1f33" stroke-width="2.5" stroke-linejoin="round"/>
 </svg>
