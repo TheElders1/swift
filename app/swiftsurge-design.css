@@ -252,3 +252,8 @@ button, input { font: inherit; }
   .ss-login-footer { min-height: 48px; font-size: 7px; }
 }
 @media (max-width: 370px) { .ss-login-header, .ss-login-footer, .ss-login-layout { width: calc(100% - 28px); }.ss-login-card { padding-right: 18px; padding-left: 18px; }.ss-login-home { font-size: 9px; } }
+@media (max-width: 760px) {
+  .ss-login-card form { width: 100%; min-width: 0; }
+  .ss-login-card form input { display: block; width: 100%; min-width: 0; max-width: 100%; height: 45px; padding-right: 11px; padding-left: 11px; }
+  .ss-login-card form .button { width: 100%; }
+}
